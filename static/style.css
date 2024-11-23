@@ -1,0 +1,171 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #83a4d4, #b6fbff); /* Soft gradient background */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Main container */
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 25px;
+}
+
+/* Input field */
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input focus effect */
+input[type="text"]:focus {
+    border-color: #66a6ff;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #66a6ff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #89f7fe;
+    transform: scale(1.05); /* Slight button enlargement on hover */
+}
+
+/* Error and Success messages */
+.alert {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Success (Weather Data) */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Error message */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Weather Card Styling */
+.weather-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for weather card */
+.weather-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Weather card titles and data */
+.weather-card h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.weather-card p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Recent searches section */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+ul li {
+    background-color: #f4f4f4;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #555;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for recent search items */
+ul li:hover {
+    background-color: #e0f7fa;
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .weather-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .weather-card p {
+        font-size: 1rem;
+    }
+
+    input[type="text"], button {
+        font-size: 1rem;
+    }
+}
+ik
